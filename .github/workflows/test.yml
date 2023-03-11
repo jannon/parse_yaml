@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Test Runner
 
 # Controls when the workflow will run
 on:
@@ -31,4 +31,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run the test script
-        run: tests/test.sh
+        run: |
+          cd tests
+          ./test.sh
